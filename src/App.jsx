@@ -44,13 +44,40 @@ export default function App() {
 
 	return (
 		<>
-			<NewTodoForm onSubmit={addTodo} />
-			<h1 className="header">Todo List</h1>
-			<TodoList
-				todos={todos}
-				toggleTodo={toggleTodo}
-				deleteTodo={deleteTodo}
-			/>
+			<div className="container">
+				<div className="sidebar">
+					<div className="nav-menu">
+						<h1>Add Task</h1>
+						<p>Search</p>
+						<p>Inbox</p>
+						<p>Today</p>
+						<p>Upcoming</p>
+						<p>Filters & Labels</p>
+					</div>
+					<div className="grouped-projects">
+						<h2>My Projects</h2>
+						<p>Fitness</p>
+						<p>Groceries</p>
+						<p>Appointments</p>
+					</div>
+					<div className="team">
+						<h3>Team</h3>
+						<p>New Brand</p>
+						<p>Website Update</p>
+						<p>Product Roadmap</p>
+						<p>Meeting Agenda</p>
+					</div>
+				</div>
+				<div className="main-notes">
+					<NewTodoForm onSubmit={addTodo} />
+					<h1 className="header">Todo List</h1>
+					<TodoList
+						todos={todos}
+						toggleTodo={toggleTodo}
+						deleteTodo={deleteTodo}
+					/>
+				</div>
+			</div>
 		</>
 	);
 }
