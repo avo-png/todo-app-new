@@ -110,24 +110,27 @@ import { HomePage } from "./Pages/HomePage";
 import { ProjectPage } from "./Pages/ProjectPage";
 import { TodayPage } from "./Pages/TodayPage";
 import "./style.css";
+import { Layout } from "./Layout";
 
 export default function App() {
 	return (
 		<>
 			<Router>
 				<Routes>
-					<Route
-						path="/"
-						element={<HomePage />}
-					/>
-					<Route
-						path="/TodayPage"
-						element={<TodayPage />}
-					/>
-					<Route
-						path="/ProjectPage"
-						element={<ProjectPage />}
-					/>
+					<Route element={<Layout />}>
+						<Route
+							path="/"
+							element={<HomePage />}
+						/>
+						<Route
+							path="/TodayPage"
+							element={<TodayPage />}
+						/>
+						<Route
+							path="/ProjectPage"
+							element={<ProjectPage />}
+						/>
+					</Route>
 				</Routes>
 			</Router>
 		</>
