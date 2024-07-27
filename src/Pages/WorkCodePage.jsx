@@ -44,7 +44,7 @@ export const WorkCodePage = () => {
 
 	return (
 		<>
-			<div className="container">
+			<div className="container--navbar">
 				<div className="sidebar">
 					<div className="nav-menu">
 						<h2>Add Task</h2>
