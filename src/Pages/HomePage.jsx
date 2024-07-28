@@ -44,7 +44,7 @@ export const HomePage = () => {
 
 	return (
 		<>
-			<h1>HomePage</h1>
+			<h1>Homepage</h1>
 			<div className="main-notes">
 				<NewTodoForm onSubmit={addTodo} />
 				<h1 className="header">Todo List</h1>

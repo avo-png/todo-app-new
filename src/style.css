@@ -168,3 +168,8 @@ p {
 main {
   margin-left: 12em;
 }
+
+.nav-menu a {
+  color: hsl(200, 100%, 90%);
+  text-decoration: none;
+}
