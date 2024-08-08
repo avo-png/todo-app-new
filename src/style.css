@@ -173,3 +173,7 @@ main {
   color: hsl(200, 100%, 90%);
   text-decoration: none;
 }
+
+.group-projects h3 {
+  font-weight: normal;
+}

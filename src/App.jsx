@@ -107,8 +107,10 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage } from "./Pages/HomePage";
-import { ProjectPage } from "./Pages/ProjectPage";
+import { GroceriesPage } from "./Pages/GroceriesPage";
 import { TodayPage } from "./Pages/TodayPage";
+import { FitnessPage } from "./Pages/FitnessPage";
+import { AppointmentPage } from "./Pages/AppointmentPage";
 import "./style.css";
 import { Layout } from "./Layout";
 
@@ -127,8 +129,16 @@ export default function App() {
 							element={<TodayPage />}
 						/>
 						<Route
-							path="/ProjectPage"
-							element={<ProjectPage />}
+							path="/GroceriesPage"
+							element={<GroceriesPage />}
+						/>
+						<Route
+							path="/FitnessPage"
+							element={<FitnessPage />}
+						/>
+						<Route
+							path="/AppointmentPage"
+							element={<AppointmentPage />}
 						/>
 					</Route>
 				</Routes>

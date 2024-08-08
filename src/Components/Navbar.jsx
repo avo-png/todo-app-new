@@ -42,9 +42,18 @@ export function Navbar() {
 							<Link to="/TodayPage">
 								<h2>My Projects</h2>
 							</Link>
-							<p># Fitness</p>
+							<Link to="/FitnessPage">
+								<h3># Fitness</h3>
+							</Link>
+							<Link to="/GroceriesPage">
+								<h3># Groceries</h3>
+							</Link>
+							<Link to="/AppointmentPage">
+								<h3># Appointments</h3>
+							</Link>
+							{/* <p># Fitness</p>
 							<p># Groceries</p>
-							<p># Appointments</p>
+							<p># Appointments</p> */}
 						</div>
 						<div className="team">
 							<h2>Team</h2>
